@@ -99,8 +99,8 @@ public class SqlSessionFactoryBuilder {
                     Pattern pattern = Pattern.compile("(#\\{(.*?)})");
                     Matcher matcher = pattern.matcher(sql);
                     for (int i = 1; matcher.find(); i++) {
-                        String g1 = matcher.group(1);
-                        String g2 = matcher.group(2);
+                        String g1 = matcher.group(1);// #{id} 占位符
+                        String g2 = matcher.group(2);//id 属性
                         parameter.put(i, g2);
                         sql = sql.replace(g1, "?");
                     }

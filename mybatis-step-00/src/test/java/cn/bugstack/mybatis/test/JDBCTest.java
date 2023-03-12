@@ -18,10 +18,10 @@ public class JDBCTest {
     @Test
     public void test_jdbc() throws Exception {
         // 1.加载驱动
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
 
         // 2.连接信息
-        String url = "jdbc:mysql://127.0.0.1:3306/mybatis?useUnicode=true&characterEncoding=utf8&useSSL=true";
+        String url = "jdbc:mysql://127.0.0.1:3306/local?useUnicode=true&characterEncoding=utf8&useSSL=true";
         String username = "root";
         String password = "123456";
 

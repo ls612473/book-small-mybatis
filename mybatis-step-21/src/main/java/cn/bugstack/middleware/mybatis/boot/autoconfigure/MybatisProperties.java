@@ -7,7 +7,7 @@ public class MybatisProperties {
 
     public static final String MYBATIS_PREFIX = "mybatis.datasource";
 
-    private String driver;              // com.mysql.jdbc.Driver
+    private String driver;              // com.mysql.cj.jdbc.Driver
     private String url;                 // jdbc:mysql://127.0.0.1:3306/bugstack?useUnicode=true
     private String username;            // root
     private String password;            // 123456
