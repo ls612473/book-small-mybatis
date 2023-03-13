@@ -85,7 +85,6 @@ public class XMLConfigBuilder extends BaseBuilder {
             if (environment.equals(id)) {
                 // 事务管理器
                 TransactionFactory txFactory = (TransactionFactory) typeAliasRegistry.resolveAlias(e.element("transactionManager").attributeValue("type")).newInstance();
-
                 // 数据源
                 Element dataSourceElement = e.element("dataSource");
                 DataSourceFactory dataSourceFactory = (DataSourceFactory) typeAliasRegistry.resolveAlias(dataSourceElement.attributeValue("type")).newInstance();
